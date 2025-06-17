@@ -95,22 +95,16 @@ fi
 cd "$(dirname "$0")"
 
 # Executar todos os testes
-echo "Procurando arquivos de teste em sample-nuruominoboards/..."
+echo "Procurando arquivos de teste em ../sample-nuruominoboards/..."
 echo
 
-for test_file in sample-nuruominoboards/test*.txt; do
+for test_file in ../sample-nuruominoboards/test*.txt; do
     if [ -f "$test_file" ]; then
         # Determinar nome do teste
         test_base=$(basename "$test_file" .txt)
         
-        # Pular testes específicos
-        if [[ "$test_base" == "test05" || "$test_base" == "test09" ]]; then
-            echo "Pulando $test_base..."
-            continue
-        fi
-        
         # Determinar arquivo de saída esperada
-        expected_file="sample-nuruominoboards/${test_base}.out"
+        expected_file="../sample-nuruominoboards/${test_base}.out"
         
         run_test "$test_file" "$expected_file"
     fi
