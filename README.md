@@ -4,12 +4,16 @@
 Este projeto tem como objetivo resolver o problema NURUOMINO (também conhecido como LITS), utilizando técnicas de Inteligência Artificial. O problema consiste em preencher uma grelha com tetraminos de forma a respeitar regras específicas, como evitar tetraminos adjacentes iguais e garantir que todas as células preenchidas formem um único polinômio válido.
 
 ## Estrutura do Projeto
-- `nuruomino.py`: Script principal que implementa a solução do problema.
-- `search.py`: Contém algoritmos de busca como A*, busca em largura e profundidade.
-- `utils.py`: Funções utilitárias para manipulação de dados e suporte ao projeto.
-- `test.sh`: Script para executar testes automatizados.
-- `sample-nuruominoboards/`: Contém exemplos de entrada e saída para testes.
-- `Enunciado.pdf`: Documento com a descrição detalhada do problema e requisitos do projeto.
+
+- **`src/`**: Contém os scripts principais do projeto.
+  - `nuruomino.py`: Script principal que implementa a solução do problema NURUOMINO.
+  - `search.py`: Implementa algoritmos de busca como A*, busca em largura e profundidade.
+  - `utils.py`: Funções utilitárias para manipulação de dados e suporte ao projeto.
+  - `test.sh`: Script para executar testes automatizados.
+- **`sample-nuruominoboards/`**: Contém exemplos de entrada e saída para testes.
+  - Arquivos de entrada (`.txt`) e saída esperada (`.out`) para diferentes casos de teste.
+- **`Enunciado.pdf`**: Documento com a descrição detalhada do problema e requisitos do projeto.
+- **`__pycache__/`**: Diretório gerado automaticamente pelo Python para armazenar arquivos compilados.
 
 ## Como Usar
 1. Certifique-se de ter Python 3.12 ou superior instalado.
